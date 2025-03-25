@@ -13,7 +13,12 @@ int main(){
 
     // Skriv din kod här i main
 
-    
+    int num;
+    scanf("%d", &num);
+
+    for (int i = 1; i < 11; i++) {
+        printf("%d\n", num * i);
+    }
 
     return 0;
 }
