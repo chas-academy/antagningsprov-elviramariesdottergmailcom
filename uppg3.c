@@ -13,8 +13,9 @@ int main(){
     // Skriv din kod här i main
 
     char string[20];
+    scanf("%s", string);
     int string_length = strlen(string);
-    
+
     printf("%d", string_length);
 
     return 0;
