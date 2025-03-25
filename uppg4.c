@@ -13,5 +13,15 @@ int main(){
 
     // Skriv din kod här i main
 
+    char string[20];
+    scanf("%s", string);
+
+    if (strlen(string) < 3) {
+        printf("Too short");
+    }
+    else {
+        printf("%c", string[2]);
+    } 
+
     return 0;
 }

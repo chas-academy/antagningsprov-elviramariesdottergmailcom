@@ -12,5 +12,10 @@ int main(){
 
     // Skriv din kod här i main
 
+    char string[20];
+    int string_length = strlen(string);
+    
+    printf("%d", string_length);
+
     return 0;
 }
