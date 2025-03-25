@@ -12,6 +12,9 @@ float BMI(float weight, float height){
 
 // Skriv din kod här
 
+float result = weight / (height * height);
+
+return result;
 }
 
 
