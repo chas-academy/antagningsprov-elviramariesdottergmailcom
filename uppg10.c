@@ -19,4 +19,25 @@ int main(){
 
    // Skriv din kod här
 
+    // creates a string and lets the user make an input
+    char string[20];
+    scanf("%s", string);
+    char temp;
+
+    for (int i = 0; i < strlen(string) - 1; i++) {
+        for (int j = 0; j < strlen(string) - i - 1; j++) {
+            if (string[j] > string[j+1]) {
+                temp = string[j];
+                string[j] = string[j+1];
+                string[j+1] = temp;
+            }
+        }
+    }
+   
+    for (int i = 0; i < strlen(string); i++)
+    {
+        printf("%c", string[i]);
+    }
+
+   return 0;
 }
