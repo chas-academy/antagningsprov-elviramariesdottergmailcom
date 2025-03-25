@@ -18,8 +18,36 @@
 #include <string.h>
 
 
+int string_to_int (char array[]) {
+
+    int num = 0; 
+  
+    for (int i = 0; i < 3; i++)  {
+
+        num = num * 10 + (array[i] - 48); 
+    }
+
+    return num;
+}
+
+
 int main(){
 
-   // Skriv din kod här
+    char string1[3];
+    char string2[3];
+    int num1 = 0;
+    int num2 = 0;
+    int sum = 0;
 
+    scanf("%s", string1);
+    scanf("%s", string2);
+
+    num1 = string_to_int(string1);
+    num2 = string_to_int(string2);
+
+    sum = num1 + num2;
+
+    printf("%d", sum);
+
+    return 0;
 }
