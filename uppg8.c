@@ -11,6 +11,10 @@
 #include <stdio.h>
 #include <string.h>
 
+/* a function that will return an int. 
+Takes two parameters: a string and an int.
+Checks that the current element in the string/array with a conditional:
+if the current char is a vowel (big or small), return 1. Otherwise, return 0.*/
 int vowel_checker (char string[], int index) {
 
     if (string[index] == 'a' || string[index] == 'A' || string[index] == 'e'|| string[index] == 'E'
@@ -31,13 +35,17 @@ int main(){
 
     scanf("%s", string); // let the user enter a string
 
-    // loop through the strings letters. If the current letter being looped through is a vowel, increase the countetr by 1.
+    /* loop through the strings letters. Check every letter in the vowel checker function.
+    our string and the current index are the arguments of the function.
+    If the function returns a 1, add a count to the vowel counter variable. 
+    If it returns anything but a 1, end the iteration and go to the next index.  */
     for (int i = 0; i < strlen(string); i++) {
         if (vowel_checker(string, i) == 1) {
             vowel_counter++;
         }
     }
 
+    // Print the amount of vowels counted in the string.
     printf("%d", vowel_counter);
 
    return 0;

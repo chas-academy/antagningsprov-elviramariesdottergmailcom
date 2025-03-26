@@ -13,8 +13,8 @@ int main(){
 
     // Skriv din kod här i main
 
-    int nums[5]; // array to save the 5 integers in
-    int temp; // int for the bubble sort, a temporary saving spot.
+    int nums[5]; // declaring an array to save the 5 integers in
+    int temp; // declaring an int variable for the bubble sort, a temporary saving spot.
 
 
     // loop to let user input 5 integers in the array
@@ -25,7 +25,7 @@ int main(){
     // bubble sort, but with decreasing order instead of increasing
     for (int i = 0; i < 5 - 1; i++) {
         for (int j = 0; j < 5 - i - 1; j++) {
-            if (nums[j] < nums[j+1]) {
+            if (nums[j] < nums[j+1]) { // the < is the reason it will decrease. if replaced with > we get an ascending bubble sort
                 temp = nums[j];
                 nums[j] = nums[j+1];
                 nums[j+1] = temp;

@@ -12,8 +12,10 @@ float BMI(float weight, float height){
 
 // Skriv din kod här
 
+// performs the arithmetics of BMI, saves it in a float since the main function prints out BMI as a float value
 float result = weight / (height * height);
 
+// returns the result float
 return result;
 }
 

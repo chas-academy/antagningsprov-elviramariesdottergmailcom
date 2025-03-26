@@ -13,9 +13,16 @@ int main(){
 
     // Skriv din kod här i main
 
+
+    // declaring a string with a maximum of 20 characters
     char string[20];
+
+    // save the user input in the string
     scanf("%s", string);
 
+
+    /* conditional. If the string length is shorter than 3 characters, print out "too short"
+    if the string is at least 3 characters long, print out the third character */
     if (strlen(string) < 3) {
         printf("Too short");
     }
